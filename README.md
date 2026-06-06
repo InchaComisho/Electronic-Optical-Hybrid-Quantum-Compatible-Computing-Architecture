@@ -14,6 +14,15 @@
 
 ---
 
+## Quick Links
+
+- [Theoretical comparison: binary, supercomputers, quantum computers, and hybrid architecture](docs/theoretical-comparison.md)
+- [Theoretical binary vs hybrid comparison simulator](simulator/theoretical_binary_hybrid_comparison.py)
+- [Japanese theoretical comparison](docs/theoretical-comparison_ja.md)
+- Related project: [Optical Bead Computing / OBQC](https://github.com/InchaComisho/Optical-Bead-Quantum-Computing-A-Multi-Valued-Photonic-Paradigm)
+
+---
+
 ## Abstract
 
 This repository proposes an **Electronic-Optical Hybrid Quantum-Compatible Computing Architecture**: a layered conceptual framework in which conventional electronic circuits handle control, timing, memory, error correction, calibration, and system management, while optical subsystems handle multi-valued, parallel, pattern-oriented, or high-dimensional state representation.
@@ -140,138 +149,47 @@ Output / Decision / Next Cycle
 
 The electronic layer manages operations that require precision, reliability, programmability, and feedback.
 
-Possible components:
+Possible components include CPU, microcontroller, FPGA, ASIC, CMOS control circuits, memory controllers, clock controllers, safety controllers, and calibration engines.
 
-- CPU / microcontroller
-- FPGA
-- ASIC
-- CMOS control circuit
-- memory controller
-- clock and timing controller
-- safety controller
-- calibration engine
-
-Primary functions:
-
-- program sequencing,
-- memory access,
-- control flow,
-- error checking,
-- state preparation commands,
-- feedback processing,
-- auditability and reproducibility.
-
----
+Primary functions include program sequencing, memory access, control flow, error checking, state preparation commands, feedback processing, auditability, and reproducibility.
 
 ### 2. Electronic-Optical Interface Layer
 
 This layer converts electronic instructions into optical states.
 
-Possible components:
+Possible components include LED or laser drivers, digital-to-analog converters, electro-optic modulators, phase modulators, polarization controllers, spatial light modulators, and timing pulse generators.
 
-- LED or laser drivers,
-- digital-to-analog converters,
-- electro-optic modulators,
-- phase modulators,
-- polarization controllers,
-- spatial light modulators,
-- timing pulse generators.
-
-Primary functions:
-
-- encode electronic data into optical parameters,
-- control light intensity, wavelength, phase, polarization, time-bin, or spatial mode,
-- maintain calibration between electronic values and optical states.
-
----
+Primary functions include encoding electronic data into optical parameters, controlling intensity, wavelength, phase, polarization, time-bin, or spatial mode, and maintaining calibration between electronic values and optical states.
 
 ### 3. Optical Processing Layer
 
 The optical layer represents, transfers, transforms, or compares information using optical degrees of freedom.
 
-Possible degrees of freedom:
+Possible degrees of freedom include wavelength, polarization, phase, time-bin, pulse width, intensity, spatial mode, path encoding, orbital angular momentum, and frequency-bin structure.
 
-- wavelength / color,
-- polarization,
-- phase,
-- time-bin,
-- pulse width,
-- intensity,
-- spatial mode,
-- path encoding,
-- orbital angular momentum,
-- frequency-bin structure.
-
-Possible functions:
-
-- high-bandwidth interconnect,
-- pattern representation,
-- parallel comparison,
-- multi-valued symbol encoding,
-- matrix-like optical transformation,
-- future quantum photonic state handling.
-
----
+Possible functions include high-bandwidth interconnects, pattern representation, parallel comparison, multi-valued symbol encoding, matrix-like optical transformation, and future quantum photonic state handling.
 
 ### 4. Detection and Readout Layer
 
 The detection layer maps optical states back into electronic data.
 
-Possible components:
+Possible components include CMOS sensors, color sensors, photodiode arrays, avalanche photodiodes, single-photon detectors for long-term quantum extension, spectrometers, interferometric detectors, and time-resolved detectors.
 
-- CMOS sensor,
-- color sensor,
-- photodiode array,
-- avalanche photodiode,
-- single-photon detector for long-term quantum extension,
-- spectrometer,
-- interferometric detector,
-- time-resolved detector.
-
-Primary functions:
-
-- measure optical states,
-- extract intensity, phase, time, spectrum, or spatial data,
-- generate electronic readout signals,
-- provide confidence metrics and noise estimates.
-
----
+Primary functions include measuring optical states, extracting intensity, phase, time, spectrum, or spatial data, generating electronic readout signals, and providing confidence metrics and noise estimates.
 
 ### 5. Electronic Correction and Verification Layer
 
 The correction layer is essential because optical states are sensitive to noise, drift, crosstalk, temperature, vibration, and calibration error.
 
-Functions:
-
-- nearest-neighbor decoding,
-- threshold decoding,
-- probabilistic decoding,
-- redundancy checking,
-- forward error correction,
-- repeated measurement voting,
-- confidence scoring,
-- drift correction,
-- safety rejection when confidence is too low.
+Functions include nearest-neighbor decoding, threshold decoding, probabilistic decoding, redundancy checking, forward error correction, repeated measurement voting, confidence scoring, drift correction, and safety rejection when confidence is too low.
 
 This layer prevents the architecture from relying on unrealistic assumptions of perfect optical state separation.
-
----
 
 ### 6. Quantum-Compatible Extension Layer
 
 This is the long-term research layer.
 
-It explores whether the same electronic-optical control architecture can be extended toward:
-
-- photonic qubits,
-- qudits,
-- time-bin quantum states,
-- frequency-bin quantum states,
-- path-encoded quantum states,
-- polarization-encoded quantum states,
-- orbital-angular-momentum states,
-- quantum photonic gates,
-- measurement-based photonic computing.
+It explores whether the same electronic-optical control architecture can be extended toward photonic qubits, qudits, time-bin quantum states, frequency-bin quantum states, path-encoded quantum states, polarization-encoded quantum states, orbital-angular-momentum states, quantum photonic gates, and measurement-based photonic computing.
 
 This layer is not required for near-term deterministic prototypes. It is included as a compatibility direction, not as a claim of immediate quantum computing capability.
 
@@ -300,16 +218,7 @@ A deterministic optical state may be represented as:
 S_o = (lambda, P, phi, tau, w, s, l, A)
 ```
 
-Where:
-
-- `lambda` = wavelength / frequency
-- `P` = polarization
-- `phi` = phase
-- `tau` = time-bin
-- `w` = pulse width
-- `s` = spatial mode or position
-- `l` = orbital angular momentum
-- `A` = amplitude or intensity
+Where `lambda` is wavelength or frequency, `P` is polarization, `phi` is phase, `tau` is time-bin, `w` is pulse width, `s` is spatial mode or position, `l` is orbital angular momentum, and `A` is amplitude or intensity.
 
 A practical decoder must estimate:
 
@@ -317,13 +226,47 @@ A practical decoder must estimate:
 S_hat = decode(measure(S_o + noise + drift + crosstalk))
 ```
 
-A robust system should not only output `S_hat`, but also:
+A robust system should not only output `S_hat`, but also confidence, margin, error risk, and reject-if-uncertain behavior.
+
+---
+
+## Theoretical Comparison and Simulation
+
+A dedicated theoretical comparison document and simulator have been added:
+
+- [docs/theoretical-comparison.md](docs/theoretical-comparison.md)
+- [docs/theoretical-comparison_ja.md](docs/theoretical-comparison_ja.md)
+- [simulator/theoretical_binary_hybrid_comparison.py](simulator/theoretical_binary_hybrid_comparison.py)
+
+The comparison covers:
+
+- binary symbolic representation,
+- multi-valued electronic-optical symbols,
+- theoretical state-count difference such as `log2(40) ≈ 5.32 bits/symbol`,
+- conventional supercomputers as classical binary massively parallel systems,
+- quantum computers as a separate computational paradigm,
+- relative energy and latency under low, moderate, and high optical-overhead scenarios.
+
+Important framing:
 
 ```text
-confidence(S_hat)
-margin(S_hat)
-error_risk(S_hat)
-reject_if_uncertain(S_hat)
+A 40-state optical or electronic-optical symbol can theoretically represent
+about 5.32 bits per symbol, but this does not mean it is automatically
+5.32 times faster or more energy-efficient than binary computers.
+```
+
+The simulator is intended to prevent overclaiming by explicitly including interface overhead, detector cost, correction overhead, and latency assumptions.
+
+Run:
+
+```bash
+python simulator/theoretical_binary_hybrid_comparison.py
+```
+
+Run with a larger state sweep:
+
+```bash
+python simulator/theoretical_binary_hybrid_comparison.py --payload-bits 1000000 --max-state 1024
 ```
 
 ---
@@ -336,31 +279,19 @@ This repository is built around testable hypotheses, not claims of completed har
 
 Electronic control, calibration, and correction may make optical multi-valued processing more practical than a purely optical-only system.
 
-Test:
-
-- Compare optical decoding accuracy with and without electronic correction.
-- Measure robustness under noise, drift, and crosstalk.
-
----
+Test: compare optical decoding accuracy with and without electronic correction and measure robustness under noise, drift, and crosstalk.
 
 ### Hypothesis 2: Optical state representation may reduce communication bottlenecks
 
 Some tasks may benefit from high-dimensional optical representation, especially where state transfer, pattern comparison, or parallel readout matters.
 
-Test:
-
-- Compare bandwidth, energy per transmitted symbol, error rate, and latency against binary electronic or optical baselines.
-
----
+Test: compare bandwidth, energy per transmitted symbol, error rate, and latency against binary electronic or optical baselines.
 
 ### Hypothesis 3: Quantum-compatible design can reduce future redesign cost
 
 Designing the electronic-optical interface with quantum photonic constraints in mind may make future transition to qudit or photonic quantum systems easier.
 
-Test:
-
-- Identify which interface components remain useful when moving from classical optical states to quantum photonic states.
-- Measure loss, phase stability, timing jitter, detector noise, and calibration compatibility.
+Test: identify which interface components remain useful when moving from classical optical states to quantum photonic states and measure loss, phase stability, timing jitter, detector noise, and calibration compatibility.
 
 ---
 
@@ -379,6 +310,7 @@ Test:
 - Add noise, drift, crosstalk, quantization, and sensor limits.
 - Decode with confidence scoring.
 - Compare against binary baseline models.
+- Run theoretical binary-vs-hybrid comparison scenarios.
 
 ### Phase 2: RGBW / CMOS Optical Prototype
 
@@ -411,19 +343,9 @@ Test:
 
 This architecture is related to, but distinct from, Optical Bead Computing.
 
-OBQC provides:
+OBQC provides soroban-inspired optical state concepts, multi-valued optical bead patterns, RGBW / SCD symbolic encodings, and optical pattern decoding experiments.
 
-- soroban-inspired optical state concepts,
-- multi-valued optical bead patterns,
-- RGBW / SCD symbolic encodings,
-- optical pattern decoding experiments.
-
-This repository provides:
-
-- system-level electronic-optical integration,
-- control and correction architecture,
-- quantum-compatible extension roadmap,
-- separation between deterministic prototypes and long-term quantum research.
+This repository provides system-level electronic-optical integration, control and correction architecture, a quantum-compatible extension roadmap, and separation between deterministic prototypes and long-term quantum research.
 
 OBQC may be one optical processing layer within this broader architecture.
 
@@ -446,19 +368,7 @@ This architecture is not:
 
 ## Key Limitations
 
-Important limitations include:
-
-- optical loss,
-- detector noise,
-- thermal drift,
-- phase instability,
-- crosstalk,
-- calibration burden,
-- error correction overhead,
-- limited state separability,
-- fabrication tolerance,
-- integration cost,
-- mismatch between classical optical states and true quantum states.
+Important limitations include optical loss, detector noise, thermal drift, phase instability, crosstalk, calibration burden, error correction overhead, limited state separability, fabrication tolerance, integration cost, and mismatch between classical optical states and true quantum states.
 
 A hybrid architecture is only useful if the optical layer provides enough benefit to justify the interface and correction overhead.
 
@@ -479,7 +389,7 @@ Any prototype or simulation should report:
 - detector noise,
 - rejection rate,
 - correction overhead,
-- comparison against electronic-only and optical-only baselines.
+- comparison against electronic-only, optical-only, binary, and workload-specific baselines.
 
 ---
 
@@ -502,6 +412,8 @@ This is not a patent filing. It is an open research-oriented architecture propos
 |-- LICENSE
 |
 |-- docs/
+|   |-- theoretical-comparison.md
+|   |-- theoretical-comparison_ja.md
 |   |-- system-architecture.md
 |   |-- electronic-layer.md
 |   |-- optical-layer.md
@@ -509,6 +421,7 @@ This is not a patent filing. It is an open research-oriented architecture propos
 |   |-- limitations.md
 |
 |-- simulator/
+|   |-- theoretical_binary_hybrid_comparison.py
 |   |-- hybrid_state_decoder.py
 |   |-- electronic_optical_interface_model.py
 |
@@ -554,8 +467,8 @@ You may share, adapt, translate, prototype, test, and build upon this concept un
 
 ## Keywords
 
-Electronic-optical hybrid computing, quantum-compatible computing architecture, photonic computing, optical computing, electronic control layer, optical processing layer, qudit-compatible architecture, photonic quantum computing, multi-valued optical states, hybrid computing system, CMOS optical interface, FPGA optical control, optical state decoding, quantum photonics, open invention, Artificial Wisdom, Natural-Complement Science
+Electronic-optical hybrid computing, quantum-compatible computing architecture, photonic computing, optical computing, binary comparison, supercomputer comparison, quantum computer comparison, theoretical simulator, electronic control layer, optical processing layer, qudit-compatible architecture, photonic quantum computing, multi-valued optical states, hybrid computing system, CMOS optical interface, FPGA optical control, optical state decoding, quantum photonics, open invention, Artificial Wisdom, Natural-Complement Science
 
 ## Hashtags
 
-#ElectronicOpticalHybrid #QuantumCompatibleComputing #PhotonicComputing #OpticalComputing #HybridComputing #QuantumPhotonics #Qudit #OpticalStateProcessing #CMOS #FPGA #OpenInvention #ArtificialWisdom #NaturalComplementScience
+#ElectronicOpticalHybrid #QuantumCompatibleComputing #PhotonicComputing #OpticalComputing #HybridComputing #BinaryComparison #SupercomputerComparison #QuantumComputerComparison #QuantumPhotonics #Qudit #OpticalStateProcessing #CMOS #FPGA #OpenInvention #ArtificialWisdom #NaturalComplementScience
