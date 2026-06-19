@@ -293,6 +293,21 @@ CMOSセンサー、フォトダイオード、
 
 ---
 
+## 関連リンク / Related Links
+
+### 基盤構想
+
+- [コンピュータのパラダイムシフト](https://note.com/inchacomusho/n/n3122fccd16e6)
+- [Abacus Decimal Computing Paradigm](https://github.com/InchaComisho/Abacus-Decimal-Computing-Paradigm)
+- [Abacus Decimal Computing Paradigm - 日本語版](https://github.com/InchaComisho/Abacus-Decimal-Computing-Paradigm/blob/main/README_ja.md)
+
+### 関連リポジトリ
+
+- [電子・光ハイブリッド量子互換コンピューティング](https://github.com/InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing/blob/main/README_ja.md)
+- [光量子コンピュータ：多値フォトニックパラダイム（光珠量子計算）](https://github.com/InchaComisho/Optical-Bead-Quantum-Computing-A-Multi-Valued-Photonic-Paradigm/blob/main/README_ja.md)
+
+---
+
 ## 関連：光量子・多値フォトニック・量子互換コンピューティング
 
 ### 光量子コンピュータ / 光珠量子計算

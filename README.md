@@ -434,6 +434,21 @@ This is not a patent filing. It is an open research-oriented architecture propos
 
 ---
 
+## Related Links
+
+### Foundational Concept
+
+- [Computer Paradigm Shift](https://note.com/inchacomusho/n/n3122fccd16e6)
+- [Abacus Decimal Computing Paradigm](https://github.com/InchaComisho/Abacus-Decimal-Computing-Paradigm)
+- [Abacus Decimal Computing Paradigm - English README](https://github.com/InchaComisho/Abacus-Decimal-Computing-Paradigm/blob/main/README.md)
+
+### Related Repositories
+
+- [Electronic–Optical Hybrid Quantum-Compatible Computing](https://github.com/InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing/blob/main/README.md)
+- [Optical Bead Quantum Computing: A Multi-Valued Photonic Paradigm](https://github.com/InchaComisho/Optical-Bead-Quantum-Computing-A-Multi-Valued-Photonic-Paradigm/blob/main/README.md)
+
+---
+
 ## Related: Optical Quantum, Multi-Valued Photonic, and Quantum-Compatible Computing
 
 ### Optical Quantum Computer / Optical Bead Quantum Computing
