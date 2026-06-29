@@ -8,7 +8,7 @@
 **主分野:** ハイブリッド計算アーキテクチャ、フォトニック計算、電子制御システム、量子互換コンピューティング、qudit着想型光システム  
 **リポジトリ:** `InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing-Architecture`  
 **言語:** 日本語 / 英語  
-**ライセンス:** CC BY-SA 4.0  
+**ライセンス:** CC BY 4.0  
 **公開日:** 2026-06-06  
 **English README:** [README.md](README.md)
 
@@ -356,8 +356,8 @@ CMOSセンサー、フォトダイオード、
 
 ## ライセンス
 
-CC BY-SA 4.0  
-Creative Commons Attribution-ShareAlike 4.0 International
+CC BY 4.0  
+Creative Commons Attribution 4.0 International
 
 この構想は、適切な帰属表示と互換ライセンス条件のもとで、共有、翻訳、改変、試作、検証、発展が可能です。
 

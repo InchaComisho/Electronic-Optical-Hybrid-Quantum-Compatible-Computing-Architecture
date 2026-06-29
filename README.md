@@ -8,7 +8,7 @@
 **Primary domain:** Hybrid computing architecture, photonic computing, electronic control systems, quantum-compatible computing, qudit-inspired optical systems  
 **Repository:** `InchaComisho/Electronic-Optical-Hybrid-Quantum-Compatible-Computing-Architecture`  
 **Language:** English / Japanese  
-**License:** CC BY-SA 4.0  
+**License:** CC BY 4.0  
 **Published:** 2026-06-06  
 **Japanese README:** [README_ja.md](README_ja.md)
 
@@ -497,8 +497,8 @@ Independent Japanese conceptualizer, observer, proposer, AI tuner, and advocate 
 
 ## License
 
-CC BY-SA 4.0  
-Creative Commons Attribution-ShareAlike 4.0 International
+CC BY 4.0  
+Creative Commons Attribution 4.0 International
 
 You may share, adapt, translate, prototype, test, and build upon this concept under the license terms, provided appropriate attribution is preserved and derivative works are shared under compatible terms.
 
