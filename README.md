@@ -1,5 +1,7 @@
 # Electronic-Optical Hybrid Quantum-Compatible Computing Architecture
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M6J122N2K2)
+
 ## A conceptual architecture for combining electronic control, optical multi-valued processing, and long-term quantum photonic compatibility
 
 > **One-sentence definition:** Electronic-Optical Hybrid Quantum-Compatible Computing is a conceptual computing architecture that combines electronic control, memory, correction, and sequencing with optical multi-valued or high-dimensional state processing, while preserving a possible long-term bridge toward quantum photonic and qudit-compatible systems.
