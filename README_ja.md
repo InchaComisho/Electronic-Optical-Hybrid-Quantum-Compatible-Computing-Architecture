@@ -12,14 +12,14 @@
 **言語:** 日本語 / 英語  
 **ライセンス:** CC BY 4.0  
 **公開日:** 2026-06-06  
-**English README:** [README.md](README.md)
+**English README:** [README.md](README_ja.md)
 
 ---
 
 ## クイックリンク
 
 - [理論比較：二進法・スーパーコンピューター・量子コンピューター・電子光ハイブリッド構想](docs/theoretical-comparison_ja.md)
-- [Theoretical comparison: binary, supercomputers, quantum computers, and hybrid architecture](docs/theoretical-comparison.md)
+- [Theoretical comparison: binary, supercomputers, quantum computers, and hybrid architecture](docs/theoretical-comparison_ja.md)
 - [理論比較シミュレーター](simulator/theoretical_binary_hybrid_comparison.py)
 - 関連プロジェクト: [Optical Bead Computing / OBQC](https://github.com/InchaComisho/Optical-Bead-Quantum-Computing-A-Multi-Valued-Photonic-Paradigm)
 
@@ -118,7 +118,7 @@ OBQC
 このリポジトリには、二進法、従来型スーパーコンピューター、量子コンピューター、電子・光ハイブリッド構想を安全に比較するための文書とシミュレーターを追加しています。
 
 - [docs/theoretical-comparison_ja.md](docs/theoretical-comparison_ja.md)
-- [docs/theoretical-comparison.md](docs/theoretical-comparison.md)
+- [docs/theoretical-comparison.md](docs/theoretical-comparison_ja.md)
 - [simulator/theoretical_binary_hybrid_comparison.py](simulator/theoretical_binary_hybrid_comparison.py)
 
 比較対象：
