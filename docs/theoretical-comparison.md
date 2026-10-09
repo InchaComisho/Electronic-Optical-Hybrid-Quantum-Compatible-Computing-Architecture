@@ -1,5 +1,7 @@
 # Theoretical Comparison: Binary, Supercomputers, Quantum Computers, and Electronic-Optical Hybrid Architecture
 
+[日本語版はこちら / Japanese version](theoretical-comparison_ja.md)
+
 ## Purpose
 
 This document adds a theoretical comparison layer for the **Electronic-Optical Hybrid Quantum-Compatible Computing Architecture**.
